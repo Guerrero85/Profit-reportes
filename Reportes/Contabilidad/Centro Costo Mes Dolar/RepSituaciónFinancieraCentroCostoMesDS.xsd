@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="RepSituaciónFinancieraCentroCostoMes" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="RepSituaciónFinancieraCentroCostoMes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HeaderRep">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Empresa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rif" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Orden" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Filtro" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RepEstadoSituacionFinancieraCentroCostoMes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="co_cen" type="xs:string" minOccurs="0" />
+              <xs:element name="des_cen" type="xs:string" minOccurs="0" />
+              <xs:element name="co_cue" type="xs:string" minOccurs="0" />
+              <xs:element name="des_cue" type="xs:string" minOccurs="0" />
+              <xs:element name="Anio" type="xs:int" minOccurs="0" />
+              <xs:element name="Enero" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Febrero" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Marzo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Abril" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Mayo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Junio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Julio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Agosto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Septiembre" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Octubre" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Noviembre" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Diciembre" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tasa_dolar" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Filtros">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sdFec_emis1_D" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sdFec_emis1_H" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sCo_cue_D" type="xs:string" minOccurs="0" />
+              <xs:element name="sCo_cue_H" type="xs:string" minOccurs="0" />
+              <xs:element name="sCo_cen_D" type="xs:string" minOccurs="0" />
+              <xs:element name="sCo_cen_H" type="xs:string" minOccurs="0" />
+              <xs:element name="bHeaderRep_D" type="xs:int" minOccurs="0" />
+              <xs:element name="bHeaderRep_H" type="xs:int" minOccurs="0" />
+              <xs:element name="dTasaDolar_D" type="xs:string" minOccurs="0" />
+              <xs:element name="dTasaDolar_H" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
